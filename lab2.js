@@ -24,17 +24,7 @@ var days;
     days[days["Friday"] = 5] = "Friday";
     days[days["Staturday"] = 6] = "Staturday";
 })(days || (days = {}));
-// in french
-// enum days {
-//     lundi,
-//     mardi,
-//     mercredi,
-//     jeudi,
-//     vendredi,
-//     samedi,
-//     dimanche
-// }
-/*
+
 console.log('Month enum: ');
 console.log(months);
 console.log('January: ' + months.January);
@@ -46,45 +36,21 @@ console.log('Month 1: ' + months[1]);
 //html elements
 var pTodayDate = document.getElementById("p--today-date");
 //Today's day
-// let today = Date.now();
 var today = new Date();
-// console.log(today);
+console.log(today);
 //Today's Month
-// console.log('Today\'s Month: ' + today.getMonth());
+console.log('Today\'s Month: ' + today.getMonth());
 var todayMonth = months[today.getMonth()];
 //Today's day of week
-// console.log('Today\'s day of week: ' + today.getDay());
+console.log('Today\'s day of week: ' + today.getDay());
 var todayDayOfWeek = days[today.getDay()];
 //Today's day of month
-// console.log('Today\'s day of month: ' + today.getDate());
+console.log('Today\'s day of month: ' + today.getDate());
 //Today's year
-// console.log('Today\'s day of year: ' + today.getFullYear());
+console.log('Today\'s day of year: ' + today.getFullYear());
 //display today's date to page
-//inside {} is js, and outside {} is array
 pTodayDate.innerHTML = "Today is " + todayDayOfWeek + ", " + todayMonth + " " + today.getDate() + ", " + today.getFullYear();
-//html elements
-// let btn_birthday = document.getElementById("button--birthday");
-// let input_birthday = document.getElementById("input--date-picker");
-// let msg_birthday = document.getElementById("p--birthday-message");
-// btn_birthday.addEventListener('click', function () {
-// btn_birthday.onclick = function () {
-//     console.log(input_birthday.value);
-//     let birthday = input_birthday.value;
-//     getBirthday(birthday);
-// }
-// // if (btn_birthday.click()) {
-// //
-// //     // msg_birthday.innerHTML = `Your birthday will be on `;
-// // }
-//
-// function getBirthday (d) {
-//     let d = new Date(d);
-//     // console.log(days[d.getDay()]);
-//     let birthdayDayOfWeek : string = days[d.getDay()];
-//     let birthdayOfMonth : string = months[d.getMonth()];
-//     msg_birthday.innerHTML = `Your birthday will be on ${ birthdayDayOfWeek } ${ birthdayOfMonth } ${ d.getDate() }, ${ d.getFullYear() }.`;
-// }
-// Lee's method
+
 var userBirthday;
 var buttonBirthday = document.getElementById("button--birthday");
 var inputDatePicker = document.getElementById("input--date-picker");
